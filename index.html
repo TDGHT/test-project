@@ -1,0 +1,426 @@
+<!doctype html>
+<html>
+	<head>
+    	<title>Welcome to my site</title>
+        <script src="bootstrap/js/respond.js"></script>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+    </head>
+    <body>
+    	<div class="container">
+        	<div class="row">
+            	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+                	<div class="navbar-header">
+                    	<button class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+                        	<span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-hand-down"></span>
+                            Menu
+                        </button>
+                        <a class="navbar-brand" href="#">Test</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="mynav">
+                    	<ul class="nav navbar-nav">
+                        	<li class="active"><a href="#">Link</a></li>
+                            <li class="dropdown">
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Link <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                	<li><a href="#">link1</a></li>
+                                    <li><a href="#">link2</a></li>
+                                    <li><a href="#">link3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                        <form class="navbar-form pull-right">
+                        	<div class="form-group">
+                            	<div class="input-group">
+                                	<input type="text" name="search" placeholder="Search" class="form-control" />
+                                </div>
+                                <button class="btn btn-success">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <div class="row">
+            	<div class="col-lg-12">
+                	<div class="carousel slide" data-ride="carousel" data-interval="2000" id="slider">
+                    	<div class="carousel-indicators">
+                        	<li data-target="#slider" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider" data-slide-to="1"></li>
+                            <li data-target="#slider" data-slide-to="2"></li>
+                            <li data-target="#slider" data-slide-to="3"></li>
+                        </div>
+						<div class="carousel-inner">
+                        	<div class="item active">
+                            	<img src="img/bg1.jpg" alt="img1" />
+                                <div class="carousel-caption">
+                                	<h3>Picture Caption 1</h3>
+                                    <p><a href="#login" data-toggle="modal">Login to website</a></p>
+                                </div>
+                            </div>
+                            <div class="item">
+                            	<img src="img/bg2.jpg" alt="img2" />
+                                <div class="carousel-caption">
+                                	<h3>Picture Caption 2</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                            	<img src="img/bg3.jpg" alt="img3" />
+                                <div class="carousel-caption">
+                                	<h3>Picture Caption 3</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                            	<img src="img/bg4.jpg" alt="img4" />
+                                <div class="carousel-caption">
+                                	<h3>Picture Caption 4</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#slider" class="left carousel-control" data-slide="prev" >
+                    	<span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a href="#slider" class="right carousel-control" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        	<div class="jumbotron">
+            	<img src="img/1.jpg" class="img-responsive img-circle pull-right" width="300px" height="200px" alt="jumbotron"/>
+                <h3>This is a image site</h3>
+                <p>
+ measured speed, and it is normalized with results of Intel Core 2 CPU with multi-threading option switched off. So if you have modern CPU from Intel or AMD, rating values in single-thread mode must be close to real CPU frequency.
+                </p>
+            </div>
+            <div class="row">
+            	<ol class="breadcrumb">
+                	<li><a href="#">Home</a> <span class="glyphicon glyphicon-circle-arrow-right"></span></li>
+                    <li><a href="#">News</a> <span class="glyphicon glyphicon-circle-arrow-right"></span></li>
+                    <li class="active">Show</li>
+                </ol>
+            </div>
+        	<div class="row">
+            	<div class="col-lg-4 col-md-4 col-sm-5 col-xs-5">
+<p>This form allows you to measure the performance of your computer.ere are two tests:
+Compression with LZMA method 
+Decompression with LZMA method 
+The benchmark shows a rating in MIPS (million instructions per second). The rating value is calculated from the measured speed, and it is normalized with results of Intel Core 2 CPU with multi-threading option switched off. So if you have modern CPU from Intel or AMD, rating values in single-thread mode must be close to real CPU frequency.
+You can change the dictionary size to increase memory usage. Also you can change the number of threads.
+The CPU Usage column shows the percentage of time the processor is working. It's normalized for a one-thread load. For example, 180% CPU Usage for 2 threads can mean that average CPU usage is about 90% for each thread.
+The Rating / Usage column shows rating normalized for 100% of CPU usage. That column shows performance of the one CPU thread. It must be close to real CPU frequency, if you have modern CPU.
+The Total rating shows averages of the compressing and decompression ratings.
+Compression speed and rating strongly depend from memory (RAM) latency. 
+Decompression speed and rating strongly depend on CPU integer operations. For example, an Intel Pentium 4 has big branch misprediction penalty (which is effect of long pipeline) and pretty slow multiply and shift operations. So, the Pentium 4 has pretty low decompressing ratings.
+Also the program checks possible errors. If the program shows some error message, in most cases it means that your RAM is defective. If so, don't use 7-Zip for compressing data, since such errors can lead to data losses.
+</p>
+                </div>
+                
+                <div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-7 col-xs-7">
+<p>7-Zip Copyright (C) 1999-2012 Igor Pavlov.
+Licenses for files are:
+7z.dll: GNU LGPL + unRAR restriction 
+All other files: GNU LGPL 
+The GNU LGPL + unRAR restriction means that you must follow both GNU LGPL rules and unRAR restriction rules.
+Note: You can use 7-Zip on any computer, including a computer in a commercial organization. You don't need to register or pay for 7-Zip.
+Read file License.txt for full information about licenseThe CPU Usage column shows the percentage of time the processor is working. It's normalized for a one-thread load. For example, 180% CPU Usage for 2 threads can mean that average CPU usage is about 90% for each thread.
+The Rating / Usage column shows rating normalized for 100% of CPU usage. That column shows performance of the one CPU thread. It must be close to real CPU frequency, if you have modern CPU.
+The Total rating shows averages of the compressing and decompression ratings.
+Compression speed and rating strongly depend from memory (RAM) latency. 
+Decompression speed and rating strongly depend on CPU integer operations. For example, an Intel Pentium 4 has big branch misprediction penalty (which is effect of long pipeline) and pretty slow multiply and shift operations. So, the Pentium 4 has pretty low decompressing ratings.
+Also the program checks possible errors. If the program shows some error message, in most cases it means that your RAM is defective. If so, don't use 7-Zip for compressing data, since such errors can lead to data losses
+</p>
+<div class="row">
+            	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                	<p>
+<a href="#">7z.exe is the command line version of </a>. 7z.exe uses 7z.dll from the 7-Zip package. 7z.dll is used by the 7-Zip File Manager also. 7za.exe (a = alone) is a standalone version of 7-Zip. 7za.exe supports only 7z, lzma, cab, zip, gzip, bzip2, Z and tar formats. 7za.exe doesn't use external modules.<a href="#" class="btn btn-info btn-block" data-toggle="tooltip" title="Read More For 7zip">Read More <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span></a>
+                  </p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                	<p>
+<a href="#">The Total rating shows averages of the</a> compressing and decompression ratings.
+Compression speed and rating strongly depend from memory (RAM) latency. 
+Decompression speed and rating strongly depend on CPU integer operations. For example, an Intel Pentium 4 has big branch misprediction penalty (which is effect of long pipeline) and pretty slow multiply and shift operations. So, the Pentium 4 has pretty low decompressing ratings.<a href="#" class="btn btn-warning btn-xs" data-toggle="tooltip" title="Read More for Total">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                	<p>
+<a href="#">branch misprediction penalty hrefo my </a>(which is effect of long pipeline) and pretty slow multiply and shift operations. So, the Pentium 4 has pretty low decompressing ratings.
+Also the program checks possible errors. If the program shows some error message, in most cases it means that your RAM is defective. If so, don't use 7-Zip for compressing data, since such errors can lead to data losses.
+<a href="#" class="btn btn-success btn-lg" data-toggle="tooltip" data-placement="left" title="Read More for Branch">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                	<p>
+<a href="#">register or pay for 7-Zip Read file .</a>
+License.txt for full information about licenseThe CPU Usage column shows the percentage of time the processor is working. It's normalized for a one-thread load. For example, 180% CPU Usage for 2 threads can mean that average CPU usage is about 90% for each thread.<a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Read More For Register">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </p>
+                </div>
+            </div>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-lg-6">
+                	<div class="table-responsive">
+                        <table class="table table-bordered table-condensed table-hover">
+                            <tr>
+                                <th>Fname</th>
+                                <th>Lname</th>
+                                <th>Email</th>
+                            </tr>
+                            <tr>
+                                <td>Ali</td>
+                                <td>Alizade</td>
+                                <td>ali@yahoo.com</td>
+                            </tr>
+                            <tr>
+                                <td>mohammadali</td>
+                                <td>gasemzade</td>
+                                <td>mohammadali_gasemzadeh@yahoo.com</td>
+                            </tr>
+                            <tr>
+                                <td>shapur</td>
+                                <td>seyyedi</td>
+                                <td>shapur@yahoo.com</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            	<div class="col-lg-6">
+                	<ul class="nav nav-tabs">
+<li><a href="#product" data-toggle="tab">Product <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+<li><a href="#contact" data-toggle="tab">Contact <span class="glyphicon glyphicon-erase"></span></a></li>
+<li><a href="#about" data-toggle="tab">About <span class="glyphicon glyphicon-bullhorn"></span></a></li>
+<li><a href="#googlemap" data-toggle="tab">GoogleMap <span class="glyphicon glyphicon-globe"></span></a></li>
+                    </ul>
+                    <div class="tab-content">
+                    	<div class="tab-pane fade active in" id="product">
+<p>Getting Started contains a list of tasks you might want to perform when you set up your computer. Tasks in Getting Started include:
+Transferring files from another computer
+</p>                        
+						</div>
+                        <div class="tab-pane fade" id="contact">
+<p>
+These topics will help you get started with Windows 7. You can also go to the Windows website to learn more about setting up a computer.
+</p>                       
+ 						</div>
+                        <div class="tab-pane fade" id="about">
+<p>
+A firewall can help prevent hackers or malicious software (such as worms) from gaining access to your computer through a network or the Internet. A firewall can also help stop your computer from sending malicious software to other computers.
+</p>	
+                        </div>
+                        <div class="tab-pane fade" id="googlemap">
+<p>
+However, if the program isn't listed, you might need to open a port. For example, to play a multiplayer game with friends online, you might need to open a port for the game so that the firewall allows the game information to reach your computer. A port stays open all the time, so be sure to close ports that you don't need open anymore.
+</p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-lg-12">
+                	<div class="panel-group" id="accordion">
+                    	<div class="panel panel-default">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                <a href="#mahsul" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">Product <span class="glyphicon glyphicon-shopping-cart"></span></a></h4>
+                            </div>
+                            <div id="mahsul" class="panel-collapse collapse in">
+                            	<div class="panel-body">
+<p>Getting Started contains a list of tasks you might want to perform when you set up your computer. Tasks in Getting Started include:
+Transferring files from another computer
+</p>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                <a href="#tamas" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">Contact <span class="glyphicon glyphicon-erase"></span></a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="tamas">
+                            	<div class="panel-body">
+<p>
+These topics will help you get started with Windows 7. You can also go to the Windows website to learn more about setting up a computer.
+</p>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a href="#darbarema" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">About <span class="glyphicon glyphicon-bullhorn"></span></a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="darbarema">
+                            	<div class="panel-body">
+<p>
+A firewall can help prevent hackers or malicious software (such as worms) from gaining access to your computer through a network or the Internet. A firewall can also help stop your computer from sending malicious software to other computers.
+</p>	
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                <a href="#nagshe" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">GoogleMap <span class="glyphicon glyphicon-globe"></span></a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="nagshe">
+                            	<div class="panel-body">
+<p>
+However, if the program isn't listed, you might need to open a port. For example, to play a multiplayer game with friends online, you might need to open a port for the game so that the firewall allows the game information to reach your computer. A port stays open all the time, so be sure to close ports that you don't need open anymore.
+</p>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-lg-4">
+                	<div class="thumbnail ">
+                    	<a href="#pic1" data-toggle="modal">
+                <img class="img-responsive img-thumbnail" src="img/1.jpg" width="200px" height="400px" alt="img1" />
+                		</a>
+                        <div class="caption">
+                            <h3>Register</h3>
+                            <p>Register in system</p>
+                            <p><a href="#pic1" class="btn btn-primary" data-toggle="modal">Read More</a></p>
+                		</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                	<div class="thumbnail">
+                    	<a href="#pic2" data-toggle="modal">
+                <img class="img-responsive img-thumbnail" src="img/2.jpg" width="200px" height="400px" alt="img1" />
+                		</a>
+                        <div class="caption">
+                        	<h3>Contact</h3>
+                            <p>Contact in managment</p>
+                            <p><a href="#pic2" class="btn btn-primary" data-toggle="modal">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                	<div class="thumbnail ">
+                    	<a href="#pic3" data-toggle="modal">
+                <img class="img-responsive img-thumbnail" src="img/3.jpg" width="200px" height="400px" alt="img1" />
+                		</a>
+                        <div class="caption">
+                        	<h3>About</h3>
+                            <p>Aboue by me!!!</p>
+                            <p><a href="#pic3" class="btn btn-primary" data-toggle="modal">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal windows -->
+        <div class="modal fade" id="pic1">
+        	<div class="modal-dialog">
+            	<div class="modal-content">
+                	<div class="modal-header">
+                    	<button class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">Register</h3>
+                    </div>
+                    <div class="modal-body">
+                    	<p>Register in System...</p>
+                    </div>
+                    <div class="modal-footer">
+                    	<button class="btn btn-success">Register <span class="glyphicon glyphicon-user"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="pic2">
+        	<div class="modal-dialog">
+            	<div class="modal-content">
+                	<div class="modal-header">
+                    	<button class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">Contact</h3>
+                    </div>
+                    <div class="modal-body">
+                    	<p>Contact to management...</p>
+                    </div>
+                    <div class="modal-footer">
+                    	<button class="btn btn-info">Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="pic3">
+        	<div class="modal-dialog">
+            	<div class="modal-content">
+                	<div class="modal-header">
+                    	<button class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">About</h3>
+                    </div>
+                    <div class="modal-body">
+                    	<div class="checkbox">
+                        	<label class="control-label">
+                            <input type="checkbox" class="checkbox" data-toggle="collapse" data-target="#email" />
+                                Enter Email
+                            </label>
+                        </div>
+                        <div class="form-group collapse" id="email">
+                        	<label class="control-label">Email Address :</label>
+                            <input type="text" name="email" placeholder="Email" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    	<button class="btn btn-info" data-dismiss="modal">Close <span class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="login">
+        	<div class="modal-dialog">
+            	<div class="modal-content">
+                	<div class="modal-header">
+                    	<button class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">LogIn</h3>
+                    </div>
+                    <div class="modal-body">
+                        	<form>
+                            	<div class="form-group">
+                                	<label class="control-label">Username :</label>
+                                    <input type="text" name="username" placeholder="Username" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                	<label class="control-label">Password :</label>
+                                    <input type="password" name="password" placeholder="Password" class="form-control" />
+                                </div>
+                                <div class="checkbox">
+                                	<label><input type="checkbox" class="checkbox" />Remember me</label>
+                                </div>
+                            </form>
+                    </div>
+                    <div class="modal-footer">
+                    	<div class="btn-group">
+                  <button class="btn btn-success" data-toggle="tooltip" title="Log in to website" data-placement="left">Log in <span class="glyphicon glyphicon-log-in"></span></button>
+                  <button class="btn btn-warning">Clean <span class="glyphicon glyphicon-cloud"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- javascript -->
+        <script src="bootstrap/js/jquery-3.1.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+			$(document).ready(function(){
+				$('.nav-tabs a:first').tab('show');
+				$('a.btn').tooltip();
+				$('button').tooltip();
+				$('.form-group .collapse').collapse();
+			});
+		</script>
+    </body>
+</html>
