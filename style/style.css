@@ -1,0 +1,34 @@
+.navbar-default{
+	background-color:#444;
+	background-image:linear-gradient(#111,#444);	
+}
+.navbar-default .active{
+	background-color:#444;	
+}
+.navbar-default .navbar-nav > .active > a{
+	background-image:linear-gradient(#fff,#ddd);	
+	color:#000;	
+	box-shadow:1px -1px 1px #978F8F;
+	text-shadow:1px 1px 1px #3A7EB0;
+}
+.glyphicon-user,.glyphicon-log-in{
+	color:#7781EC;	
+}
+.jumbotron{
+	background-color:#555;
+	color:#999;	
+	margin-bottom:5px;
+}
+.jumbotron img{
+	margin-top:20px;	
+}
+.breadcrumb {
+    background-color: #eee;
+    padding: 8px 15px;
+}
+.tab-pane{
+	border-left:1px solid #eee;
+	border-right:1px solid #eee;
+	border-bottom:1px solid #eee;
+	padding:10px;	
+}
